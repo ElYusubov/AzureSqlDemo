@@ -60,4 +60,10 @@
     <Folder Include="AzureRMScripts" />
     <Folder Include="AzureSQLScripts" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="AzureSQLScripts\Login.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AzureRMScripts\BasicAzureLogin.ps" />
+  </ItemGroup>
 </Project>
