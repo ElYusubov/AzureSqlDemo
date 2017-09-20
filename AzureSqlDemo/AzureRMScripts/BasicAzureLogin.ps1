@@ -12,44 +12,13 @@ Get-AzureRmSubscription –SubscriptionId $id | Select-AzureRmSubscription -Subs
 #*** List AzureRM resources
 #Get-AzureRmResource | Format-Table Name,ResourceType,ResourceGroupName,Location -AutoSize
 
-
-#***Changing the Windows PowerShell script execution policy
-#Set-ExecutionPolicy RemoteSigned
-#Remove-AzureRmResourceGroup -Name 'myresourcegroup0717'
-
-
-###############################################################################################
-#*** Get AzureRM module and login
-
-Get-Module AzureRM
-Login-AzureRmAccount
-
-#*** List all availiable subscriptions under account
-Get-AzureRmSubscription
-
-#*** Get and Select Azure Subscription by ID
-Get-AzureRmSubscription –SubscriptionId $id | Select-AzureRmSubscription -SubscriptionId $id
-
-#*** List AzureRM resources
-#Get-AzureRmResource | Format-Table Name,ResourceType,ResourceGroupName,Location -AutoSize
-
-###################################################################################################
- 
- To see the examples, type: "get-help Remove-AzureRmResourceGroup -examples".
- For more information, type: "get-help Remove-AzureRmResourceGroup -detailed".
- For technical information, type: "get-help Remove-AzureRmResourceGroup -full".
- For online help, type: "get-help Remove-AzureRmResourceGroup -online"
- 
  
 #***Changing the Windows PowerShell script execution policy
 Set-ExecutionPolicy RemoteSigned
 
 #*** Add and Remove resource group and all resources 
 New-AzureRmResourceGroup -Name 'testresourcegroup' -Location 'eastus'
-Remove-AzureRmResourceGroup -Name 'testresourcegroup'
-
-  
-####################################################
+#Remove-AzureRmResourceGroup -Name 'testresourcegroup'
 
 #*** Load Azure Module and Login
 Get-Module AzureRM
