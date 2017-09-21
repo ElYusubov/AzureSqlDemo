@@ -14,11 +14,11 @@ $adminlogin = "ServerAdmin"
 $password = "ChangeYourAdminPassword1"
 
 # The logical server name has to be unique in the system
-$servername = "demo-server-$(Get-Random)"
+$servername = "demoServer-$(Get-Random)"
 
 # The sample database names
-$firstdatabasename = "demoSampleDatabase1"
-$seconddatabasename = "demoSampleDatabase2"
+$firstdatabasename = "demoDB1"
+$seconddatabasename = "demoDB2"
 
 # Set ip address range that you want to allow to access your server
 $startip = "0.0.0.0"

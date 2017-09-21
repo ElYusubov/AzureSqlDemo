@@ -17,7 +17,7 @@ Get-AzureRmSubscription –SubscriptionId $id | Select-AzureRmSubscription -Subs
 Set-ExecutionPolicy RemoteSigned
 
 #*** Add and Remove resource group and all resources 
-New-AzureRmResourceGroup -Name 'testresourcegroup' -Location 'eastus'
+New-AzureRmResourceGroup -Name 'testresourcegroup' -Location 'eastus2'
 #Remove-AzureRmResourceGroup -Name 'testresourcegroup'
 
 #*** Load Azure Module and Login

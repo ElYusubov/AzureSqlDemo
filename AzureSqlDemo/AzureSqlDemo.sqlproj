@@ -61,12 +61,15 @@
     <Folder Include="AzureSQLScripts" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="AzureRMScripts\AzureSql_ElasticPool_sample.ps1" />
-    <None Include="AzureRMScripts\BasicAzureLogin.ps1" />
-    <None Include="AzureRMScripts\CreateSinglqSql_demo01.ps1" />
+    <None Include="AzureRMScripts\AzureSql_ElasticPool_creation.ps1" />
+    <None Include="AzureRMScripts\AzureBasicLogin.ps1" />
+    <None Include="AzureRMScripts\AzureSql_creation.ps1" />
+    <None Include="AzureSQLScripts\Load_data.txt" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="AzureSQLScripts\Create_data_reader.sql" />
     <Build Include="AzureSQLScripts\Query_product_table.sql" />
+    <Build Include="AzureSQLScripts\DDL_script.sql" />
+    <Build Include="AzureSQLScripts\Create_Load_Query_tables.sql" />
   </ItemGroup>
 </Project>

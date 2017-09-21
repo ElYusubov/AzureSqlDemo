@@ -1,0 +1,15 @@
+-- Create and load the SampleDatabase with Person, Student, Course, Credit 
+https://docs.microsoft.com/en-us/azure/sql-database/sql-database-design-first-database
+
+1) Open command prompt as Admin:
+2) cd C:\Program Files\Microsoft SQL Server\130\Tools\Binn
+
+3) Run separately each command below. 
+
+bcp Course in C:\Temp\SampleTableData\SampleCourseData -S <YOUR_SERVER_NAME>.database.windows.net -d <YOUR_DB_NAME> -U <USER_NAME> -P <YOUR_USER_PASSWORD> -q -c -t ","
+
+bcp Person in C:\Temp\SampleTableData\SamplePersonData -S <YOUR_SERVER_NAME>.database.windows.net -d <YOUR_DB_NAME> -U <USER_NAME> -P <YOUR_USER_PASSWORD> -q -c -t ","
+
+bcp Student in C:\Temp\SampleTableData\SampleStudentData -S<YOUR_SERVER_NAME>.database.windows.net -d <YOUR_DB_NAME> -U <USER_NAME> -P <YOUR_USER_PASSWORD> -q -c -t ","
+
+bcp Credit in C:\Temp\SampleTableData\SampleCreditData -S <YOUR_SERVER_NAME>.database.windows.net -d <YOUR_DB_NAME> -U <USER_NAME> -P <YOUR_USER_PASSWORD> -q -c -t ","
